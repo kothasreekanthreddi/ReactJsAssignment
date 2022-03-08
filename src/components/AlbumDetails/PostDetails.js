@@ -18,8 +18,10 @@ const PostDetails = () => {
             dispatch(removeSelectedMovieOrShow(imdbID));
         };*/
     },[])
-    const listItems = postcomments.map((d) => <li key={d.postId}><div>Email:{d.email} </div><div> Comment:{d.body}</div></li>);
-    
+    let listItems = "";
+    if(postcomments.length >0){
+    listItems = postcomments.map((d) => <li key={d.postId}><div>Email:{d.email} </div><div> Comment:{d.body}</div></li>);
+    }
         
     return (
         <div>
