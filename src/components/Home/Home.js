@@ -7,8 +7,8 @@ import {fetchAsyncAlbums ,fetchAsyncComments} from "../../features/albums/albumS
 
 
 const Home = () => {
-    const dispatch  = useDispatch();
-    useEffect(() => {
+    const dispatch  = useDispatch();    
+    useEffect(() => {       
         dispatch(fetchAsyncAlbums());        
      },[]);
     return (

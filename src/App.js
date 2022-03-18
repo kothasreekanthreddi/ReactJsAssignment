@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import { BrowserRouter as Router, Routes ,Route} from "react-router-dom";
 import './App.scss';
 import Header from "./components/Header/Header";
@@ -8,8 +8,9 @@ import PostDetails from "./components/AlbumDetails/PostDetails";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
+
+  return (    
+    <div className="App">      
       <Router>
         <Header></Header>
         <div className="container">
